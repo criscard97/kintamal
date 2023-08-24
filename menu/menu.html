@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="stylesheet" href="css2.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="stylesheet" href="css3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Lisu+Bosa:wght@300&display=swap" rel="stylesheet">
+	<title>TamalApp| Menu</title>
+</head>
+<body>
+<script src="https://www.paypal.com/sdk/js?client-id=AWbFIWsbCA7mFs-JqDfMQn5DQ_WOoVgfp_usDL8pVzDroNSWKvIJ1-nkTJQze7GBAEbHf3qmDeTNFlNE&amp;currency=MXN"></script>
+<script src="code.js"></script>
+<script src="decorationMenu.js"></script>
+
+
+
+<header>
+    <!---->
+    <div class="logo">
+        <img src="logo.svg" alt="Logo_TamalApp" id="logo">
+    </div>
+    <ul class="centered-list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../aboutus/aboutus.html">Acerca de</a></li>
+            
+    </ul>
+    
+</header>
+    <div id="menu">
+        <div id="menu-bar">
+            <img src="menu.svg" alt="icono1" class="hover-effect" id="menu-icon">
+            <img src="cart.svg" alt="icono2" class="hover-effect" id="icon-cart">
+            <img src="wallet2.svg" alt="icono3" class="hover-effect" id="icon-pay">
+            
+        </div>
+        <form action = "procesar_datos.php" method="post" id="menu-form">
+            <div id="menu-content" class="menu-content">
+                <h2>Tamales | $19 c/u</h2>
+                <h3>Oaxaqueños</h3>
+                
+                <h4 id="TamVerde">Verde</h4>
+                
+                    <div>
+                        
+                        <input type="number" id="oax_cantidad1" name="oax_cantidad1" value="0" class="numero" min="0">
+                        
+                    </div>
+
+                <h4 id="TamMole">Mole</h4>
+                    <div>
+                        
+                        <input type="number" value="0" id="oax_cantidad2" name="oax_cantidad2" class="numero" min="0">
+                        
+                    </div>
+                    
+                <h4 id="TamRajas">Rajas</h4>
+                    <div>
+                        
+                        <input type="number" value="0" id="oax_cantidad3" name="oax_cantidad3" class="numero" min="0">
+                        
+                    </div>
+                    
+                <h3 id="HojaMaiz">Hoja de maíz</h3>
+                    
+                <h4 id="TamVerde">Verde</h4>
+                    <div>
+                        
+                        <input type="number" value="0" id="mai_cantidad1" name="mai_cantidad1" class="numero" min="0">
+                        
+                    </div>
+                    
+                <h4 id="TamMole">Mole</h4>
+                    <div>
+                        
+                        <input type="number" value="0" id="mai_cantidad2"  name="mai_cantidad2" class="numero" min="0">
+                        
+                    </div>
+
+                <h4 id="TamRajas">Rajas</h4>
+                    <div>
+                        
+                        <input type="number" value="0" id="mai_cantidad3" name="mai_cantidad3" class="numero" min="0">
+                        
+                    </div>
+                    
+                    <div>
+                <h4>Total en piezas</h4>
+                    <input type="text" value="0" name="total" id="total" readonly class="numero" min="0">
+                                       
+                    </div>
+                    
+                    <div>
+                <h4>$$Total a pagar$$</h4>
+                    <input type="text" value="0" id="totalApagar" readonly class="numero" min="0">
+                    <button type="button" id="ToCart" class="Siguiente">Siguiente</button>
+                    
+                    </div>
+            
+            </div>
+
+             <div id="menu-cart" class="menu-cart" >
+
+            
+                <h2>Contacto</h2>
+                
+                <div>
+                    <h4>Nombre</h4>
+                    <input type="text" name="nombre" id="Nombre" ><!--required-->
+                </div>
+                
+                <div>
+                    <h4>Apellido</h4>
+                    <input type="text" name="apellido" id="Apellido" >
+                </div>
+
+                <div>
+                    <h4>Correo</h4>
+                    <input type="text" name="correo" id="Mail" >
+                </div>
+                
+                <div>
+                    <h4>Teléfono</h4>
+                    <input type="text" name="telefono" id="Telefono" maxlength="13">
+                </div>
+
+                <div>
+                    <h2>Dirección</h2>
+                    
+                </div>
+                
+                <div>
+                    <h4>Calle</h4>
+                    <input type="text" name="calle" id="Calle" >
+                </div>
+                
+                <div>
+                    <h4>Número exterior</h4>
+                    <input type="text" name="numext" id="Numext" maxlength="13">
+                </div>
+                
+                <div>
+                    <h4>Colonia</h4>
+                    <input type="text" name="colonia" id="Colonia" >
+                </div>
+                
+                <div>
+                    <h4>Código postal</h4>
+                    <input type="text" name="codpos" id="Codpos" maxlength="5" pattern="[0-9]+">
+                    
+                </div>
+
+                <div id="cart-botones">
+                    <button type="button" id="rToMenu">Atrás</button>
+                    <button type="button" id="ToPayment" class="Siguiente" value="0">Siguiente</button>
+                    
+                </div>
+
+
+
+            
+            </div>
+
+            <div id="payment-method" class="payment-method">
+
+                <h2>Método de pago</h2>
+                    <label class="pagos">
+
+                        <input type="radio" name="elegirPago" id="tipoPagoEf" value="Efectivo">
+                        Efectivo
+
+                    </label>
+
+                    <label class="pagos">
+                        <input type="radio" name="elegirPago" id="tipoPagoPa" value="Paypal">
+                        PayPal
+                    </label>
+                    <button type="button" id="rToCart">Atrás</button>
+                    
+                    <div id="divOpcion1" class="div-opcion">
+                        <button type="submit" id="cashpay" class="despliegue" value="1" name="boton_submit">Terminar pedido</button>
+                    </div>
+                
+                    <div id="divOpcion2" class="div-opcion">
+                        <div id="paypal-button-container" class="despliegue"></div>
+                        <script>
+                            
+                        </script>
+                    
+                    </div>
+                
+                <!--<div>
+                    <button type="button" id="rToCart">Regresar</button>
+                </div>-->
+            </div>
+            
+        </form>  
+    </div>
+
+    
+    
+    
+</body>
+</html>

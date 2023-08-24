@@ -1,0 +1,392 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+#menu{
+    display: block;
+    margin-top: 3%;
+    border-style: ridge;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.9);
+    max-width: 750px;
+    max-height: 600px;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    overflow: auto;
+    border-radius: 20px;
+    background-color: rgba(255, 212, 212, 0.46);
+    padding-left: 2%;
+  
+  
+}
+
+.menu-content{
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+
+
+h2{
+    font-family: "Borel";
+    font-size: 30px;
+    margin: 0;
+}
+
+h3{
+    font-family: "Satisfy";
+    font-size: 30px;
+    color: rgb(138, 37, 37);
+    
+}
+
+#HojaMaiz{
+    color:rgb(170, 130, 0);
+}
+
+h4{
+    font-family: "Lisu Bosa";
+    font-size: 25px;
+    
+}
+
+#TamVerde{
+    color: rgb(59, 125, 58);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#TamMole{
+    color: rgba(58, 10, 10,0.9);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#TamRajas{
+    color:rgb(244, 20, 20);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+input[type="number"] {
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px;
+    text-align: center;
+}
+
+input[type="text"] {
+    border: 2px solid #aaa;
+    border-radius: 15px;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+
+#ToCart{
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: rgb(76,175,79);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Lisu Bosa";
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+  margin-left: 5%;
+}
+
+#ToCart:hover{
+    background-color: rgba(76, 175, 79, 0.7);
+}
+
+#cart-botones{
+    padding: 2%;
+}
+
+#ToPayment{
+    padding: 10px 20px;
+  font-size: 20px;
+  background-color: rgb(76,175,79);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Lisu Bosa";
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+  margin-left: 5%;
+}
+
+#ToPayment:hover{
+    background-color: rgba(76, 175, 79, 0.7);
+}
+
+#rToMenu{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(175, 76, 76);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Lisu Bosa";
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+#rToMenu:hover{
+    background-color: rgb(175, 76, 76, 0.7);
+}
+
+#rToCart{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(175, 76, 76);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Lisu Bosa";
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5%;
+}
+
+#rToCart:hover{
+    background-color: rgb(175, 76, 76, 0.7);
+}
+
+#menu-icon{
+    padding: 10px;
+    background: rgb(244, 197, 134)
+}
+
+#icon-cart{
+    padding: 10px;
+    background: none;
+}
+
+#icon-pay{
+    padding: 10px;
+    background: none;
+}
+
+#menu-bar{
+    
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#menu-bar img{
+    margin-left: 10px;
+    margin-right: 20px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+
+#menu-content{
+    
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.hover-effect{
+    transition: transform 0.5s;
+}
+
+.hover-effect:hover{
+    transform: scale(1.2);
+    background:rgb(255, 220, 173);
+}
+
+.centered-list {
+   
+    display: flex;
+    justify-content: center;
+  }
+
+header{
+    
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+header div{
+    flex-grow: 1;
+    text-align: center;
+}
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+header ul li{
+    margin-right: 40px;
+    transition: 0.5s ease;
+}
+
+header ul li:hover{
+    transform: scale(1.3);
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent; 
+    font-family: "Comfortaa";
+}
+header ul li a:hover{
+    border-bottom-color: #fff; 
+}
+
+
+
+.logo {
+    width: 5em;
+    height: 5em;
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+}
+
+/* Estilo específico para la imagen dentro del div */
+.logo img {
+    max-width: 100%; /* La imagen no superará el ancho del div */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    transition: 0.5s ease;
+}
+
+.logo :hover {
+    transform: scale(1.5);
+}
+
+.slide-in {
+    animation: slideIn 0.5s forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.div-opcion{
+    display: none;
+    overflow: hidden;
+    height: 0;
+    transition: height 1.0s ease; /* Agrega una transición suave */
+}
+
+#cashpay{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(53, 75, 138);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Lisu Bosa";
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+#cashpay:hover{
+    background-color: rgba(53, 75, 138, 0.85);;
+}
+
+
+/* Estilos para el radio personalizado */
+.pagos input[type="radio"] {
+    /* Oculta el radio original */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    /* Establece el tamaño del nuevo radio */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    margin-right: 5px; /* Espacio entre el radio y el texto */
+    position: relative;
+    top: 5px; /* Alinea verticalmente con el texto */
+    cursor: pointer;
+  }
+  
+  /* Estilos para el radio seleccionado */
+  .pagos input[type="radio"]:checked::before {
+    /* Establece el contenido del radio seleccionado */
+    content: "\2713";
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    top: -18px;
+    left: 0px;
+
+    animation: morphing 0.2s forwards;
+  }
+  
+  /* Estilos para la etiqueta del radio */
+  .pagos{
+    font-size: 23px;
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Comfortaa";
+    padding: 2%;
+  }
+  
+  @keyframes morphing {
+    0% {
+      /* Inicialmente muestra la marca de verificación con opacidad 0 */
+      content: "\2713";
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    25% {
+      /* Primer paso intermedio: incrementa opacidad y escala */
+      content: "\2713";
+      opacity: 0.25;
+      transform: scale(0.5);
+    }
+    50% {
+      /* Segundo paso intermedio: incrementa opacidad y escala */
+      content: "\2713";
+      opacity: 0.5;
+      transform: scale(0.75);
+    }
+    75% {
+      /* Tercer paso intermedio: incrementa opacidad y escala */
+      content: "\2713";
+      opacity: 0.75;
+      transform: scale(0.9);
+    }
+    100% {
+      /* Muestra la cruz con opacidad completa y escala 1 */
+      content: "\2713";
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .input-error {
+    border: 2px solid red;
+  }
