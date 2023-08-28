@@ -23,6 +23,8 @@
 
 
 
+
+
 <header>
     <!---->
     <div class="logo">
@@ -114,17 +116,17 @@
                 
                 <div>
                     <h4>Nombre</h4>
-                    <input type="text" name="nombre" id="Nombre" ><!--required-->
+                    <input type="text" name="nombre" id="Nombre" maxlength="50"><!--required-->
                 </div>
                 
                 <div>
                     <h4>Apellido</h4>
-                    <input type="text" name="apellido" id="Apellido" >
+                    <input type="text" name="apellido" id="Apellido" maxlength="50">
                 </div>
 
                 <div>
                     <h4>Correo</h4>
-                    <input type="text" name="correo" id="Mail" >
+                    <input type="text" name="correo" id="Mail" maxlength="100">
                 </div>
                 
                 <div>
@@ -139,7 +141,7 @@
                 
                 <div>
                     <h4>Calle</h4>
-                    <input type="text" name="calle" id="Calle" >
+                    <input type="text" name="calle" id="Calle" maxlength="80">
                 </div>
                 
                 <div>
@@ -149,18 +151,18 @@
                 
                 <div>
                     <h4>Colonia</h4>
-                    <input type="text" name="colonia" id="Colonia" >
+                    <input type="text" name="colonia" id="Colonia" maxlength="150">
                 </div>
                 
                 <div>
                     <h4>Código postal</h4>
-                    <input type="text" name="codpos" id="Codpos" maxlength="5" pattern="[0-9]+">
+                    <input type="text" name="codpos" id="Codpos" maxlength="5">
                     
                 </div>
 
                 <div id="cart-botones">
                     <button type="button" id="rToMenu">Atrás</button>
-                    <button type="button" id="ToPayment" class="Siguiente" value="0">Siguiente</button>
+                    <button type="button" id="ToPayment" class="Siguiente">Siguiente</button>
                     
                 </div>
 
@@ -183,20 +185,17 @@
                         <input type="radio" name="elegirPago" id="tipoPagoPa" value="Paypal">
                         PayPal
                     </label>
-                    <button type="button" id="rToCart">Atrás</button>
                     
                     <div id="divOpcion1" class="div-opcion">
                         <button type="submit" id="cashpay" class="despliegue" value="1" name="boton_submit">Terminar pedido</button>
                     </div>
-                
-                    <div id="divOpcion2" class="div-opcion">
-                        <div id="paypal-button-container" class="despliegue"></div>
+                <!-- Set up a container element for the button <button type="submit" id="cashpay">Efectivo</button>-->
+                <div id="divOpcion2" class="div-opcion">
+                    <div id="paypal-button-container" class="despliegue"></div>
                         <script>
                             
                         </script>
-                    
-                    </div>
-                
+                </div>
                 <!--<div>
                     <button type="button" id="rToCart">Regresar</button>
                 </div>-->
