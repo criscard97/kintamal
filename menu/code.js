@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const AgradecerPago = document.getElementById("menu-form")
     const botonFinal = document.getElementById("cashpay");
     AgradecerPago.addEventListener("submit", function(event) {
-      window.alert("Pedido realizado, gracias por su preferencia");
+      //window.alert("Pedido realizado, gracias por su preferencia");
       
     });
 
@@ -123,20 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (areAnyFieldsEmpty()) {
           window.alert("Por favor, llene todos los campos antes de continuar.");
         } else {
-          if(boton2.value === "1"){
-                logo3.style.background="rgb(255, 199, 123)";
-                logo1.style.background="none";
-                logo2.style.background="none";
-                contenido2.style.display="none";
-                contenido3.style.visibility="visible";
-                contenido3.style.display="block";
-                contenido3.classList.add("slide-in");
-                contenido2.classList.remove("slide-out");
-                contenido1.style.display = "none";
-          }else{
-                console.log("ELse");
-                boton2.value = "1";
-                logo3.style.background="rgb(255, 199, 123)";
+          logo3.style.background="rgb(255, 199, 123)";
                 logo1.style.background="none";
                 logo2.style.background="none";
                 contenido2.style.display="none";
@@ -149,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 var formData = document.getElementById("total");
                 var numero = parseInt(formData.value) * 19;
                   
-                paypal.Buttons({
+                  paypal.Buttons({
                     style:{
                         shape:'pill',
                         label: 'pay',
@@ -166,58 +153,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     },
                     onApprove:function(data,actions){
                       //window.alert("Gracias por su compra");
-                      document.getElementById('menu-form').addEventListener('submit', function(event){
-                        event.preventDefault();
-                        var nombre = document.getElementById('nombre').value;
-                      var apellido = document.getElementById('apellido').value;
-                      var correo = document.getElementById('correo').value;
-                      var telefono = document.getElementById('telefono').value;
-                      var calle = document.getElementById('calle').value;
-                      var numext = document.getElementById('numext').value;
-                      var colonia = document.getElementById('colonia').value;
-                      var codpos = document.getElementById('codpos').value;
-
-                      var oaxVerde = document.getElementById('oax_cantidad1').value;
-                      var oaxMole = document.getElementById('oax_cantidad2').value;
-                      var oaxRajas = document.getElementById('oax_cantidad3').value;
-                      var maiVerde = document.getElementById('mai_cantidad1').value;
-                      var maiMole = document.getElementById('mai_cantidad2').value;
-                      var maiRajas = document.getElementById('mai_cantidad3').value;
-                      var totalPz = document.getElementById('total').value;
                       AgradecerPago.submit();
-                      var formData = new FormData();
-                      formData.append('nombre',nombre);
-                      formData.append('apellido',apellido);
-                      formData.append('correo',correo);
-                      formData.append('telefono',telefono);
-                      formData.append('calle',calle);
-                      formData.append('numext',numext);
-                      formData.append('colonia',colonia);
-                      formData.append('codpos',codpos);
-                      formData.append('oax_cantidad1',oaxVerde);
-                      formData.append('oax_cantidad2',oaxMole);
-                      formData.append('oax_cantidad3',oaxRajas);
-                      formData.append('mai_cantidad1',maiVerde);
-                      formData.append('mai_cantidad2',maiMole);
-                      formData.append('mai_cantidad3',maiRajas);
-                      formData.append('total',totalPz);
-                      fetch('procesardatos.php', {
-                        method: 'POST',
-                        body: formData
-                    })
-                    .then(response => response.text())
-                    .then(data => {
-                        console.log(data);
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                    });
                       
-                    });
-                      window.location.href = 'procesar_datos.php'; // Cambia "otra_pagina.php" con la URL deseada
                       return actions.order.capture().then(function(details) {
                         // Redirección personalizada después de la transacción completada
-                        
+                        window.location.href = 'procesar_datos.php'; // Cambia "otra_pagina.php" con la URL deseada
                         
 
                       });
@@ -228,7 +168,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         console.log(data);
                     }
                 }).render('#paypal-button-container');
-          }
         }
       }
 
@@ -248,8 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
           logo2.style.background="rgb(255, 220, 173)";
           logo1.style.background="none";
           logo3.style.background="none";
-          contenido3.style.display="table-column";
-          contenido3.style.visibility="hidden";
+          contenido3.style.display="none";
           contenido2.style.display = "block";
           contenido2.classList.add("slide-in");
           contenido1.style.display = "none";
