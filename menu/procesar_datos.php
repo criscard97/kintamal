@@ -7,9 +7,9 @@ header("Location:../index.html");
   
 
   $servername = "localhost"; // O el nombre del servidor proporcionado por 000webhost
-  $username = "id21066717_thetestingprofile506"; // Tu nombre de usuario de la base de datos
+  $username = "id21139955_thetestingprofile"; // Tu nombre de usuario de la base de datos
   $password = "8Vy*GpTA7#&x!7Kr"; // Tu contraseña de la base de datos
-  $dbname = "id21066717_tamalapp_db"; // El nombre de la base de datos
+  $dbname = "id21139955_kintamaldb"; // El nombre de la base de datos
 
   $conn = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -118,7 +118,7 @@ $totalAPagar = ((int)$totalPz) * 19;
 
    // Recuperar los datos del formulario
     $correo_destino = "destinatario@example.com"; // Cambiar por el correo deseado
-    $email = "no-reply@tamalapp.com.mx";
+    $email = "no-reply@kintamal.com.mx";
     
 
     // Recuperar los datos de la compra
@@ -130,9 +130,9 @@ $totalAPagar = ((int)$totalPz) * 19;
 
     // Formato del correo
     if ($valorBoton == 1) {
-        $asunto = "Confirmación de pedido - TamalApp";
+        $asunto = "Confirmación de pedido - KinTamal";
     } else {
-        $asunto = "Confirmación de compra - TamalApp";
+        $asunto = "Confirmación de compra - KinTamal";
     }
     
     $cabeceras = "From: " . $email . "\r\n";
@@ -142,10 +142,10 @@ $totalAPagar = ((int)$totalPz) * 19;
     $contenido = '<html>';
     $contenido .= '<body>';
     if ($valorBoton == 1) {
-        $contenido .= '<h2>Confirmación de pedido - TamalApp</h2>';
+        $contenido .= '<h2>Confirmación de pedido - KinTamal</h2>';
         $contenido .= '<p>Pedido confirmado. A continuación, se muestra el detalle de tu pedido:</p>';
     } else {
-        $contenido .= '<h2>Confirmación de compra - TamalApp</h2>';
+        $contenido .= '<h2>Confirmación de compra - KinTamal</h2>';
         $contenido .= '<p>Gracias por tu compra. A continuación, se muestra el detalle de tu pedido:</p>';
     }
     
