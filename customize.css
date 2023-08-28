@@ -123,7 +123,7 @@ transform: translateX(30%);
 }
 
 .logo :hover{
-  transform: scale(1.5);
+  transform: scale(1.3);
   }
   
 
@@ -132,6 +132,19 @@ transform: translateX(30%);
     max-width: 15em;
     height: auto;
     transform: translateX(-45%);
+    transition: none;
+  }
+
+  .logo :hover{
+    transform: none;
+  }
+}
+
+@media (max-width:420px){
+  .logo img {
+    max-width: 20em;
+    height: auto;
+    transform: translateX(0%);
     transition: none;
   }
 
@@ -224,6 +237,28 @@ transform: translateX(30%);
   border: none;
 }
 
+#ques1:hover{
+    background-color:#b898ffb5;
+}
+
+#ques2:hover{
+    background-color:#b898ffb5;
+}
+
+#ques3:hover{
+    background-color:#b898ffb5;
+}
+
+#ques4:hover{
+    background-color:#b898ffb5;
+}
+
+#ques5:hover{
+    background-color:#b898ffb5;
+}
+
+
+
 .faq-answer {
   max-height: 0;
   overflow: hidden;
@@ -264,7 +299,6 @@ transform: translateX(30%);
 .carousel img {
   width: 100%;
   height: 25%;
-  
 }
 }
 
