@@ -2,15 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
   //Regresar a index
   const logo = document.getElementById("logoindex");
   logo.addEventListener("click",function(){
-      window.location.href = "index.html";
+      window.location.href = "index.php";
   });
   
-  //Quitar marca de agua de 000webhost
-  var disclaimer =  document.querySelector("img[alt='www.000webhost.com']");
-  if(disclaimer){
-     disclaimer.remove();
-  }  
-
   // Función para detectar el tipo de navegador
   const imagenCarrusel = document.querySelectorAll(".carousel img");
   const carruselDiv = document.querySelectorAll('.carousel-outer');
@@ -87,7 +81,5 @@ faqQuestions.forEach((question) => {
     item.classList.toggle("active");
   });
 });
-
-
 
 });
