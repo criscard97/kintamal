@@ -143,23 +143,6 @@ input[type="text"] {
     background-color: rgb(175, 76, 76, 0.7);
 }
 
-#rToCart{
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: rgb(175, 76, 76);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: "Lisu Bosa";
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
-    margin-bottom: 5%;
-}
-
-#rToCart:hover{
-    background-color: rgb(175, 76, 76, 0.7);
-}
-
 #menu-icon{
     padding: 10px;
     background: rgb(244, 197, 134)
@@ -386,7 +369,4 @@ header ul li a:hover{
       opacity: 1;
       transform: scale(1);
     }
-  }
-  .input-error {
-    border: 2px solid red;
   }
